@@ -1,38 +1,80 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: black;
+  font-size: 16px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; */
 }
 
-.App-link {
-  color: #61dafb;
+.App-button {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  padding: 8px;
+  color: rgb(77, 105, 231);
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid rgb(77, 105, 231);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Container {
+  width: 722px;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.Table-header {
+  width: 220px;
+  box-sizing: border-box;
+  height: 44px;
+}
+
+.Row-time {
+  padding-top: 8px;
+  width: 60px;
+  height: 100px;
+  vertical-align: top;
+  border-bottom: 0px;
+  border-top: 0px;
+  box-sizing: border-box;
+}
+
+tr:last-child .Row-time {
+  border-bottom: 1px solid black;
+}
+
+th {
+  text-transform: capitalize;
+  font-weight: 400;
+  padding: 12px;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.AvailableTime {
+  position: absolute;
+  background-color: rgb(201, 236, 201);
+  width: 222px;
+  border: 2px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
 }
